@@ -40,7 +40,7 @@ Gas leakage can lead to various accidents, resulting in material loss and human 
 
 
 ### Video Demonstrations
-- [](Media/gas-leakage.mp4)
+- [Project Demo](Media/gas-leakage.mp4)
 
 ## 📜 How to Use
 1. **Setup the Hardware**: Connect all components as per the block diagram.
