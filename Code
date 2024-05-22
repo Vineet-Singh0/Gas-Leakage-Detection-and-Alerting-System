@@ -1,0 +1,34 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(2, 3, 4, 5, 7, 8);
+#define sensor A0
+#define relay 9
+void setup() {
+// put your setup code here, to run once:
+lcd.begin(16, 2);
+pinMode(sensor, INPUT);
+pinMode(relay, OUTPUT);
+pinMode(13, OUTPUT);
+}
+void loop() {
+// put your main code here, to run repeatedly:
+bool digital = digitalRead(sensor);
+if(digital==0)
+{
+digitalWrite(relay, HIGH);
+lcd.setCursor(2, 0);
+lcd.clear();
+lcd.print("Gas Detected");
+
+digitalWrite(13, HIGH);
+}
+else
+{
+digitalWrite(relay, LOW);
+lcd.clear();
+lcd.setCursor(0, 0);
+lcd.print("No Gas Detected");
+digitalWrite(13, LOW);
+}
+delay(500);
+}
