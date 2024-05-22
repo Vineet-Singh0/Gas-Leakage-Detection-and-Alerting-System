@@ -19,7 +19,7 @@ Gas leakage can lead to various accidents, resulting in material loss and human 
 
 ## 🛠️ System Design
 ### Block Diagram
-![Block Diagram](path/to/your/block-diagram-image.png)
+![Block Diagram](Media/Block-diagram.png)
 
 ### Description
 1. **Arduino Uno**: The microcontroller board used to control the system.
